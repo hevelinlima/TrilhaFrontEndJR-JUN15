@@ -2,7 +2,7 @@ import { useState } from "react";
 import { ThemeProvider } from "styled-components";
 import { darkTheme, lightTheme } from "./styles/themes/defaultThemes";
 import { GlobalStyles } from "./styles/global";
-import { ToggleThemeButton } from "./components/ui/ToggleButton";
+import { Header } from "./components/page/Header";
 
 export function App() {
   const [isDarkTheme, setIsDarkTheme] = useState(true)
@@ -12,7 +12,8 @@ export function App() {
   return (
    <ThemeProvider theme={isDarkTheme ? darkTheme : lightTheme}>
     <GlobalStyles />
-    <ToggleThemeButton toggleTheme={toggleTheme} />
+    
+    <Header toggleTheme={toggleTheme} />
    </ThemeProvider>
   )
 }
