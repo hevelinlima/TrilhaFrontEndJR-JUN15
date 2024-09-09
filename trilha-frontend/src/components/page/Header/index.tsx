@@ -4,9 +4,10 @@ import { ToggleThemeButton } from "../../ui/ToggleButton";
 
 interface HeaderProps {
   toggleTheme: () => void;
+  isDarkTheme: boolean
 }
 
-export function Header({toggleTheme}: HeaderProps) {
+export function Header({toggleTheme, isDarkTheme}: HeaderProps) {
   const {t, i18n} = useTranslation("global")
 
   const handleChangeLang = (event: React.ChangeEvent<HTMLSelectElement>) => {
@@ -19,7 +20,7 @@ export function Header({toggleTheme}: HeaderProps) {
         <option value="en">EN</option>
         <option value="pt">PT-BR</option>
       </SelectButton>
-      <ToggleThemeButton toggleTheme={toggleTheme} />
+      <ToggleThemeButton isDarkTheme={isDarkTheme} toggleTheme={toggleTheme} />
       <div>
         {t("welcome")}
       </div>

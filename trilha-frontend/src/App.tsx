@@ -13,7 +13,7 @@ export function App() {
    <ThemeProvider theme={isDarkTheme ? darkTheme : lightTheme}>
     <GlobalStyles />
     
-    <Header toggleTheme={toggleTheme} />
+    <Header isDarkTheme={isDarkTheme} toggleTheme={toggleTheme} />
    </ThemeProvider>
   )
 }
