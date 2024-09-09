@@ -2,7 +2,7 @@ import { useState } from "react";
 import { ThemeProvider } from "styled-components";
 import { darkTheme, lightTheme } from "./styles/themes/defaultThemes";
 import { GlobalStyles } from "./styles/global";
-import { Header } from "./components/page/Header";
+import { HeroSection } from "./components/page/HeroSection";
 
 export function App() {
   const [isDarkTheme, setIsDarkTheme] = useState(true)
@@ -13,7 +13,7 @@ export function App() {
    <ThemeProvider theme={isDarkTheme ? darkTheme : lightTheme}>
     <GlobalStyles />
     
-    <Header isDarkTheme={isDarkTheme} toggleTheme={toggleTheme} />
+    <HeroSection isDarkTheme={isDarkTheme} toggleTheme={toggleTheme} />
    </ThemeProvider>
   )
 }
