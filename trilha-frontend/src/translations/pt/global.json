@@ -1,3 +1,9 @@
 {
-  "welcome": "bem-vindo"
+  "welcome": "bem-vindo",
+  "header": {
+    "first-item": "{ hev }",
+    "second-item": "Sobre mim",
+    "third-item": "Hobbies",
+    "fourth-item": "Motivação"
+  }
 }

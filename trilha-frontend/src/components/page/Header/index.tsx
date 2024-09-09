@@ -1,8 +1,9 @@
 import { useTranslation } from "react-i18next";
-import { FirstItem, HeaderContainer, OtherItems, SelectButton } from "./styles";
+import { FirstItem, HeaderContainer, OtherItems, SelectButton, ToggleButton } from "./styles";
 import { ToggleThemeButton } from "../../ui/ToggleButton";
 import { Link } from 'react-scroll'
 import { useState } from "react";
+import { List } from "@phosphor-icons/react";
 
 
 interface HeaderProps {
@@ -35,17 +36,17 @@ export function Header({toggleTheme, isDarkTheme}: HeaderProps) {
         </FirstItem>
         <OtherItems className={isMenuOpen ? "open" : ""}>
           <li>
-            <Link to="projects" smooth={true} duration={500}>
+            <Link to="aboutme" smooth={true} duration={500}>
               {t("header.second-item")}
             </Link>
           </li>
           <li>
-            <Link to="aboutme" smooth={true} duration={500}>
+            <Link to="hobbies" smooth={true} duration={500}>
               {t("header.third-item")}
             </Link>
           </li>
           <li>
-            <Link to="contact" smooth={true} duration={500}>
+            <Link to="motivation" smooth={true} duration={500}>
               {t("header.fourth-item")}
             </Link>
           </li>
@@ -55,13 +56,14 @@ export function Header({toggleTheme, isDarkTheme}: HeaderProps) {
               <option value="pt">PT-BR</option>
             </SelectButton>
           </li>
+          <li>
+            <ToggleThemeButton isDarkTheme={isDarkTheme} toggleTheme={toggleTheme} />
+          </li>
         </OtherItems>
-        <ToggleThemeButton isDarkTheme={isDarkTheme} toggleTheme={toggleTheme} />
+        <ToggleButton onClick={handleToggleMenu}>
+          <List weight="bold" size={32} />
+        </ToggleButton>
       </ul>
-      
-      <div>
-        {t("welcome")}
-      </div>
     </HeaderContainer>
   )
 }

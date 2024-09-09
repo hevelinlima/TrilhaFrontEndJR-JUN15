@@ -21,7 +21,7 @@ export const darkTheme: ThemeType = {
 };
 
 export const lightTheme: ThemeType = {
-  background: '#ffffff',
+  background: '#F2F0EF',
   color: '#e53939',
   borderColor: '#e53939',
   hoverBorderColor: '#888888',

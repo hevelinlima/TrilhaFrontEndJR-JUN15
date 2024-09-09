@@ -1,5 +1,5 @@
 import { Header } from "../Header";
-import { HeroContainer } from "./styles";
+import { Content, HeroContainer } from "./styles";
 
 
 interface HeroProps {
@@ -11,6 +11,9 @@ export function HeroSection({isDarkTheme, toggleTheme}: HeroProps) {
   return(
     <HeroContainer>
       <Header isDarkTheme={isDarkTheme} toggleTheme={toggleTheme} />
+      <Content>
+        Hévelin Lima
+      </Content>
     </HeroContainer>
   )
 }
