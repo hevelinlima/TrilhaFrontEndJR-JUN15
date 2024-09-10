@@ -1,5 +1,7 @@
 import { Header } from "../Header";
-import { Content, HeroContainer } from "./styles";
+import { Avatar, Content, HeroContainer, HeroText} from "./styles";
+import avatarImage from '../../../../src/assets/avatar-image.png'
+import { useTranslation } from "react-i18next";
 
 
 interface HeroProps {
@@ -8,11 +10,20 @@ interface HeroProps {
 }
 
 export function HeroSection({isDarkTheme, toggleTheme}: HeroProps) {
+  
+  const { t } = useTranslation("global")
+
   return(
     <HeroContainer>
       <Header isDarkTheme={isDarkTheme} toggleTheme={toggleTheme} />
       <Content>
-        Hévelin Lima
+        <Avatar>
+          <img src={ avatarImage } alt="" />
+        </Avatar>
+        <HeroText>Hévelin Lima 
+          <br /> 
+          <span>{t("heroContent")}</span>.
+        </HeroText>
       </Content>
     </HeroContainer>
   )

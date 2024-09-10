@@ -27,10 +27,10 @@ export const HeaderContainer = styled.div`
 export const FirstItem = styled.div`
   ${typography.fonts.titleNav}
   a{
-    color: #ffffff;
+    color: ${(props)=>props.theme.borderColor};
      
     &:hover{
-      color: ${(props)=> props.theme.color};
+      color: #fff;
     }  
   }
 `
