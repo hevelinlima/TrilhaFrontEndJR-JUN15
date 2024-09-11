@@ -7,6 +7,7 @@ export interface ThemeType {
   focusBackground: string; 
   focusColor: string; 
   aboutMeTitleColor: string;
+  cardColor: string;
 }
 
 export const darkTheme: ThemeType = {
@@ -18,6 +19,7 @@ export const darkTheme: ThemeType = {
   focusBackground: '#333333',
   focusColor: '#ffffff',
   aboutMeTitleColor: '#F2F0EF',
+  cardColor: '#202020',
 };
 
 export const lightTheme: ThemeType = {
@@ -29,4 +31,5 @@ export const lightTheme: ThemeType = {
   focusBackground: '#f0f0f0',
   focusColor: '#000000',
   aboutMeTitleColor: '#000000',
+  cardColor: '#d0d0d0'
 };

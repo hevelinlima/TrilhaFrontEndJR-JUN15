@@ -5,16 +5,11 @@ export const HobbiesContainer = styled.section`
   width: 100%;
   height: 100%;
 
-  @media (max-width: 768px) {
-    height: 100vh;
-  }
+  margin: 5rem 0;
 `
 export const HobbiesTitle = styled.h2`
   color: ${(props) => props.theme.aboutMeTitleColor};
   ${typography.fonts.textHero};
-  @media (max-width: 768px) {
-    margin-top: 3rem;
-  }
 `
 
 export const HobbiesContent = styled.div`

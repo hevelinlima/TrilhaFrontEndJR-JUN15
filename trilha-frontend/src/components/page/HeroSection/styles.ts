@@ -13,7 +13,6 @@ export const HeroContainer = styled.section`
 
 
   @media (max-width: 768px) {
-    height: 100vh;
     background-size: cover;
   }
 `

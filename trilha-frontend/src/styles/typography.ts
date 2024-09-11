@@ -34,9 +34,8 @@ export const typography = {
     `,
     textBody: css`
     font-family: "Jost", sans-serif;
-    font-weight: 700;
-    font-size: 2.25rem;
-    line-height: 1.6;
+    font-weight: 600;
+    font-size: 1.5rem;
   `,
   }
 }

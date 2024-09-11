@@ -9,7 +9,7 @@ export const Toggle = styled.button<ToggleProps>`
   align-items: center;
   justify-content: space-between;
   background: transparent;
-  border: 2px solid #fff;
+  border: 2px solid ${(props) => props.theme.borderColor};
   border-radius: 8px;
   padding: 0.5rem;
   cursor: pointer;
@@ -21,6 +21,6 @@ export const Toggle = styled.button<ToggleProps>`
   }
 
   svg {
-    color: #fff;
+    color: ${(props) => props.theme.borderColor};
   }
 `
