@@ -3,11 +3,12 @@ import { typography } from "../../../styles/typography";
 
 export const AboutMeContainer = styled.section`
   width: 100%;
-  height: 100%;
+  height: 100vh;
 `
 export const AboutMeTitle = styled.h2`
   color: ${(props) => props.theme.aboutMeTitleColor};
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
+  ${typography.fonts.textHero};
 `
 
 export const AboutMeContent = styled.div`
@@ -20,11 +21,26 @@ export const AboutMeContent = styled.div`
   padding: 10rem;
 
   color: ${(props) => props.theme.iconColor};
-  ${typography.fonts.textHero};
+  ${typography.fonts.textNormal};
+`
+
+export const MediumContainer = styled.div`
+  display: flex;
+  gap: 3rem;
+
+  span{
+    max-width: 35rem;
+  }
 `
 
 export const Stacks = styled.div`
-
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  img{
+    height: 5rem;
+  }
 `
 const animate = keyframes`
   0% {

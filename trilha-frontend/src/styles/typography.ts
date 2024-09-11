@@ -28,13 +28,13 @@ export const typography = {
   `,
     textNormal: css`
       font-family: "Jost", sans-serif;
-      font-weight: 400;
+      font-weight: 700;
       font-size: 1.25rem;
       line-height: 1.3;
     `,
     textBody: css`
     font-family: "Jost", sans-serif;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 2.25rem;
     line-height: 1.6;
   `,
