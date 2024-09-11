@@ -6,6 +6,7 @@ import { HeroSection } from "./components/page/HeroSection";
 import { AboutMe } from "./components/page/AboutMe";
 import { Hobbies } from "./components/page/Hobbies";
 import { Motivation } from "./components/page/Motivation";
+import { Footer } from "./components/page/Footer";
 
 export function App() {
   const [isDarkTheme, setIsDarkTheme] = useState(true)
@@ -20,6 +21,7 @@ export function App() {
     <AboutMe id="about-me" />
     <Hobbies id="hobbies" />
     <Motivation id="motivation" />
+    <Footer />
    </ThemeProvider>
   )
 }

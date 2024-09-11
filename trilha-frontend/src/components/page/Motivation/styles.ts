@@ -30,7 +30,7 @@ export const MotivationCard = styled.section`
   }
 `
 export const MotivationTitle = styled.h2`
-  color: ${(props) => props.theme.color};
+  color: ${(props) => props.theme.aboutMeTitleColor};
   ${typography.fonts.textHero};
   margin: 1rem 0;
 `
