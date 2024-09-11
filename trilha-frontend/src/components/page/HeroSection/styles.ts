@@ -1,13 +1,15 @@
 import styled from "styled-components";
 import { typography } from "../../../styles/typography";
 
-export const HeroContainer = styled.div`
+export const HeroContainer = styled.section`
   width: 100%;
   height: 100vh;
   background-image: url('background-image.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+
+  position: relative;
 
 
   @media (max-width: 768px) {
@@ -36,7 +38,7 @@ export const Content = styled.div`
 
   ${typography.fonts.textHero};
 
-  position: fixed;
+  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -70,3 +72,23 @@ export const Avatar = styled.div`
     object-fit: cover;
   }
 `
+
+export const Contacts = styled.div`
+  height: 2rem;
+  display: flex;
+  gap: 1rem;
+
+  a{
+    height: inherit;
+    img {
+    height: inherit;
+    transition: transform 0.3s ease, filter 0.3s ease; 
+
+    &:hover {
+      cursor: pointer;
+      transform: scale(1.1); 
+      filter: brightness(1.2) blur(1px); 
+    }
+  }
+  }
+` 

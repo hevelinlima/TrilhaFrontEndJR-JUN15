@@ -3,6 +3,7 @@ import { ThemeProvider } from "styled-components";
 import { darkTheme, lightTheme } from "./styles/themes/defaultThemes";
 import { GlobalStyles } from "./styles/global";
 import { HeroSection } from "./components/page/HeroSection";
+import { AboutMe } from "./components/page/AboutMe";
 
 export function App() {
   const [isDarkTheme, setIsDarkTheme] = useState(true)
@@ -13,7 +14,8 @@ export function App() {
    <ThemeProvider theme={isDarkTheme ? darkTheme : lightTheme}>
     <GlobalStyles />
     
-    <HeroSection isDarkTheme={isDarkTheme} toggleTheme={toggleTheme} />
+    <HeroSection id="hero" isDarkTheme={isDarkTheme} toggleTheme={toggleTheme} />
+    <AboutMe id="about-me" />
    </ThemeProvider>
   )
 }

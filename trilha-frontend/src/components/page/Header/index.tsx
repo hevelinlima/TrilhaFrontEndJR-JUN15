@@ -36,7 +36,7 @@ export function Header({toggleTheme, isDarkTheme}: HeaderProps) {
         </FirstItem>
         <OtherItems className={isMenuOpen ? "open" : ""}>
           <li>
-            <Link to="aboutme" smooth={true} duration={500}>
+            <Link to="about-me" smooth={true} duration={500}>
               {t("header.second-item")}
             </Link>
           </li>

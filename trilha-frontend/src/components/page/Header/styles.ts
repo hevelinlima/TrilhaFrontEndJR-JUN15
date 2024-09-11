@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { typography } from "../../../styles/typography";
 
-export const HeaderContainer = styled.div`
+export const HeaderContainer = styled.header`
   color: #ffffff;
   position: fixed;
   top: 0;
