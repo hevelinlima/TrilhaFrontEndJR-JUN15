@@ -27,11 +27,7 @@ export const HeaderContainer = styled.header`
 export const FirstItem = styled.div`
   ${typography.fonts.titleNav}
   a{
-    color: ${(props)=>props.theme.borderColor};
-     
-    &:hover{
-      color: #fff;
-    }  
+    color: ${(props)=>props.theme.color}; 
   }
 `
 
@@ -40,11 +36,11 @@ export const OtherItems = styled.div`
   gap: 2rem;
   a{
     ${typography.fonts.textNav}
-    color: #ffffff;
+    color: ${(props)=>props.theme.borderColor};
 
     &:hover{
       color: ${(props)=> props.theme.color};
-      border-bottom: 3px solid ${(props)=>props.theme.borderColor};
+      border-bottom: 3px solid ${(props)=>props.theme.color};
       transition: all 0.2s ease-out;
     }
   }
@@ -74,7 +70,7 @@ export const OtherItems = styled.div`
 export const SelectButton = styled.select`
   width: 4rem;
   height: 2.5rem;
-  border: 2px solid ${(props) => props.theme.borderColor};
+  border: 2px solid ${(props) => props.theme.color};
   border-radius: 8px;
   background: transparent;
   color: ${(props) => props.theme.color};

@@ -4,6 +4,7 @@ import { darkTheme, lightTheme } from "./styles/themes/defaultThemes";
 import { GlobalStyles } from "./styles/global";
 import { HeroSection } from "./components/page/HeroSection";
 import { AboutMe } from "./components/page/AboutMe";
+import { Hobbies } from "./components/page/Hobbies";
 
 export function App() {
   const [isDarkTheme, setIsDarkTheme] = useState(true)
@@ -16,6 +17,7 @@ export function App() {
     
     <HeroSection id="hero" isDarkTheme={isDarkTheme} toggleTheme={toggleTheme} />
     <AboutMe id="about-me" />
+    <Hobbies id="hobbies" />
    </ThemeProvider>
   )
 }
